@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * Fetch workflow and tool manifests from getsentry/XcodeBuildMCP at the
+ * Fetch workflow and tool manifests from getsentry/MobileBuildMCP at the
  * latest published tag (or a ref passed via `--ref=<ref>`), plus the
  * package.json version for display.
  *
  * Output: app/docs/_data/generated/manifests.json
  *
- * Run manually whenever a new XcodeBuildMCP release is out:
+ * Run manually whenever a new MobileBuildMCP release is out:
  *   pnpm run docs:sync
  */
 
@@ -16,7 +16,7 @@ import { fileURLToPath } from "node:url"
 import path from "node:path"
 import { load as loadYaml } from "js-yaml"
 
-const REPO = "getsentry/XcodeBuildMCP"
+const REPO = "getsentry/MobileBuildMCP"
 const GH_API = "https://api.github.com"
 const RAW = "https://raw.githubusercontent.com"
 
@@ -29,10 +29,10 @@ const outFile = path.join(outDir, "manifests.json")
 const args = process.argv.slice(2)
 const refArg = args.find((a) => a.startsWith("--ref="))?.slice("--ref=".length)
 const LOCAL_FALLBACK = args.includes("--local") || process.env.XBMCP_LOCAL === "1"
-const LOCAL_REPO = process.env.XBMCP_LOCAL_PATH ?? "/Volumes/Developer/XcodeBuildMCP-main"
+const LOCAL_REPO = process.env.XBMCP_LOCAL_PATH ?? "/Volumes/Developer/MobileBuildMCP-main"
 
 function ghHeaders() {
-  const h = { Accept: "application/vnd.github+json", "User-Agent": "xcodebuildmcp-docs-sync" }
+  const h = { Accept: "application/vnd.github+json", "User-Agent": "mobilebuildmcp-docs-sync" }
   if (process.env.GITHUB_TOKEN) h.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`
   return h
 }

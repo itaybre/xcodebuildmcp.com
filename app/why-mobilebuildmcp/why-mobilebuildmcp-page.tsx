@@ -21,7 +21,7 @@ import {
   mcpSteps,
   stories,
   tokenComparison,
-} from "./why-xcodebuildmcp-data";
+} from "./why-mobilebuildmcp-data";
 
 type TokenBadgeProps = {
   label: string;
@@ -66,7 +66,7 @@ function TokenBadge({
   );
 }
 
-export function WhyXcodeBuildMCPPage() {
+export function WhyMobileBuildMCPPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -80,13 +80,13 @@ export function WhyXcodeBuildMCPPage() {
             >
               <Image
                 src="/logo.png"
-                alt="XcodeBuildMCP"
+                alt="MobileBuildMCP"
                 width={28}
                 height={28}
                 className="h-7 w-7"
               />
               <span className="text-lg font-semibold tracking-tight">
-                XcodeBuildMCP
+                MobileBuildMCP
               </span>
             </Link>
 
@@ -110,10 +110,10 @@ export function WhyXcodeBuildMCPPage() {
                 Xcode Integration
               </Link>
               <Link
-                href="/why-xcodebuildmcp"
+                href="/why-mobilebuildmcp"
                 className="text-sm text-white transition-colors"
               >
-                Why XcodeBuildMCP?
+                Why MobileBuildMCP?
               </Link>
               <Link
                 href="/docs"
@@ -125,7 +125,7 @@ export function WhyXcodeBuildMCPPage() {
 
             <div className="flex items-center gap-3">
               <Link
-                href="https://github.com/getsentry/XcodeBuildMCP"
+                href="https://github.com/getsentry/MobileBuildMCP"
                 className="hidden items-center gap-2 text-sm text-sentry-text-secondary transition-colors hover:text-white sm:flex"
               >
                 <Github className="h-4 w-4" />
@@ -177,11 +177,11 @@ export function WhyXcodeBuildMCPPage() {
                   Xcode Integration
                 </Link>
                 <Link
-                  href="/why-xcodebuildmcp"
+                  href="/why-mobilebuildmcp"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-white transition-colors"
                 >
-                  Why XcodeBuildMCP?
+                  Why MobileBuildMCP?
                 </Link>
                 <Link
                   href="/docs"
@@ -211,7 +211,7 @@ export function WhyXcodeBuildMCPPage() {
                 </span>
               </h1>
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-sentry-text-secondary sm:text-xl">
-                XcodeBuildMCP does not replace Xcode or xcodebuild. It
+                MobileBuildMCP does not replace Xcode or xcodebuild. It
                 orchestrates Apple&apos;s own tools into a closed loop: chat
                 request, tool call, simulator interaction, managed logs,
                 debugger state, and proof the agent can explain back to you
@@ -294,7 +294,7 @@ export function WhyXcodeBuildMCPPage() {
               </div>
             </div>
             <p className="mt-6 text-center text-sm text-sentry-text-secondary">
-              In this illustrative loop, XcodeBuildMCP returns a{" "}
+              In this illustrative loop, MobileBuildMCP returns a{" "}
               <span className="font-semibold text-green-300">
                 {tokenComparison.summary}
               </span>{" "}
@@ -307,7 +307,7 @@ export function WhyXcodeBuildMCPPage() {
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto mb-12 max-w-3xl text-center">
               <h2 className="text-3xl font-bold sm:text-4xl">
-                Why agents do better with XcodeBuildMCP
+                Why agents do better with MobileBuildMCP
               </h2>
               <p className="mt-4 text-lg leading-8 text-sentry-text-secondary">
                 It breaks the Xcode IDE bottleneck while keeping Apple&apos;s
@@ -387,7 +387,7 @@ export function WhyXcodeBuildMCPPage() {
         <section className="px-4 pb-12 sm:px-6 lg:px-8">
           <p className="mx-auto max-w-4xl text-center text-xs leading-6 text-sentry-text-muted">
             Demo workflow is illustrative, not a benchmark. It is
-            representative of a real agent-assisted session using XcodeBuildMCP,
+            representative of a real agent-assisted session using MobileBuildMCP,
             but it has been simplified for clarity. Output volume and exact tool
             behavior vary by task, project, build settings, and agent client.
           </p>
@@ -398,8 +398,8 @@ export function WhyXcodeBuildMCPPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-3">
-              <Image src="/logo.png" alt="XcodeBuildMCP" width={20} height={20} className="h-5 w-5" />
-              <span className="text-sm font-medium">XcodeBuildMCP</span>
+              <Image src="/logo.png" alt="MobileBuildMCP" width={20} height={20} className="h-5 w-5" />
+              <span className="text-sm font-medium">MobileBuildMCP</span>
               <span className="text-sm text-sentry-text-muted">&copy; {new Date().getFullYear()} Sentry</span>
             </div>
 
@@ -408,16 +408,16 @@ export function WhyXcodeBuildMCPPage() {
                 Sentry
               </Link>
               <Link
-                href="https://x.com/xcodebuildmcp"
+                href="https://x.com/mobilebuildmcp"
                 className="flex items-center gap-1.5 text-sm text-sentry-text-muted transition-colors hover:text-white"
               >
                 <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
-                @xcodebuildmcp
+                @mobilebuildmcp
               </Link>
               <Link
-                href="https://github.com/getsentry/XcodeBuildMCP"
+                href="https://github.com/getsentry/MobileBuildMCP"
                 className="flex items-center gap-1.5 text-sm text-sentry-text-muted transition-colors hover:text-white"
               >
                 <Github className="h-3.5 w-3.5" />

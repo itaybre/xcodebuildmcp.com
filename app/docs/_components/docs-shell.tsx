@@ -125,7 +125,7 @@ export function DocsShell({ activeSlug, children }: DocsShellProps) {
             <Image src="/logo.png" alt="" width={28} height={28} priority />
           </span>
           <div className="brand-title">
-            XcodeBuildMCP
+            MobileBuildMCP
             <span className="brand-chip">docs</span>
           </div>
         </Link>
@@ -144,7 +144,7 @@ export function DocsShell({ activeSlug, children }: DocsShellProps) {
             </Link>
           ))}
           <a
-            href="https://github.com/getsentry/XcodeBuildMCP"
+            href="https://github.com/getsentry/MobileBuildMCP"
             target="_blank"
             rel="noreferrer"
           >

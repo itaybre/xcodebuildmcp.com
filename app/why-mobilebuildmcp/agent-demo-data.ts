@@ -52,7 +52,7 @@ export type AgentTranscriptEvent = {
 
 export const agentDemoPlaybackRate = 2.0;
 
-export const agentDemoToolServer = "xcodebuildmcp";
+export const agentDemoToolServer = "mobilebuildmcp";
 
 export const agentDemoPrompt =
   "Add a storm-alert banner to Atmos Weather, wire it to the Settings toggle, then prove it on a stormy location.";
@@ -60,8 +60,8 @@ export const agentDemoPrompt =
 export const agentDemoPromptSubmitMs = 2_600;
 
 export const agentDemoVideo: AgentDemoVideoMetadata = {
-  src: "/videos/why-xcodebuildmcp/atmos-weather-agent-demo.mp4",
-  poster: "/videos/why-xcodebuildmcp/atmos-weather-agent-demo-poster.jpg",
+  src: "/videos/why-mobilebuildmcp/atmos-weather-agent-demo.mp4",
+  poster: "/videos/why-mobilebuildmcp/atmos-weather-agent-demo-poster.jpg",
   durationMs: 146_267,
   width: 720,
   height: 1564,

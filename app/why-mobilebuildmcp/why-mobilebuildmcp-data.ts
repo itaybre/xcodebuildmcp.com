@@ -55,7 +55,7 @@ export const benefits: Array<{
   {
     icon: Gauge,
     title: "Less output, more signal",
-    text: "Raw Xcode output is a transcript. XcodeBuildMCP turns it into status, errors, warnings, artifacts, and next steps the agent can act on.",
+    text: "Raw Xcode output is a transcript. MobileBuildMCP turns it into status, errors, warnings, artifacts, and next steps the agent can act on.",
   },
   {
     icon: Settings2,
@@ -93,11 +93,11 @@ export const stories = [
   {
     role: "Agent",
     title: "Apple tools stay the source of truth",
-    text: "XcodeBuildMCP does not replace Xcode or xcodebuild. It orchestrates Apple's own xcodebuild, simctl, devicectl, log, lldb, simulator, and debugger surfaces through a narrower contract.",
+    text: "MobileBuildMCP does not replace Xcode or xcodebuild. It orchestrates Apple's own xcodebuild, simctl, devicectl, log, lldb, simulator, and debugger surfaces through a narrower contract.",
   },
   {
     role: "When raw xcodebuild is enough",
     title: "Stable CI can stay simple",
-    text: "If you already have a stable archive or CI script, raw xcodebuild may be the right tool. XcodeBuildMCP earns its place in iterative agent-assisted workflows where state, UI, logs, and debugging all matter.",
+    text: "If you already have a stable archive or CI script, raw xcodebuild may be the right tool. MobileBuildMCP earns its place in iterative agent-assisted workflows where state, UI, logs, and debugging all matter.",
   },
 ];
